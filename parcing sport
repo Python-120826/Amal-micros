@@ -4,8 +4,11 @@ from bs4 import BeautifulSoup
 URL = "https://repost.uz"
 category = "/sport"
 plus = URL + category
-HTTP = requests.get(plus)
-print(HTTP)
-print(HTTP.url + category)
-print(HTTP.status_code)
-print(HTTP.text)
+capital = {'User-Agent': 'Mozilla/5.0'}
+HTTP = requests.get(plus, headers=capital).text
+stuff = BeautifulSoup(plus,'html.parser')
+article = stuff.find_all('div',class_= 'nblock')
+DATA = []
+for article in article:
+    title = article.find('div',class_='nt').find('h3').get_text
+    print(title)
