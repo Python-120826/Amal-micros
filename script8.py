@@ -19,6 +19,14 @@ print(pc.ram > pc2.ram)
 
 
 
+
+
+
+
+
+
+
+
 #номер 2 #
 
 class Animal:
@@ -46,15 +54,25 @@ class Reptiliya(Animal):
         self.cheshuya = cheshuya
         self.razmer = razmer
         self.food = food
+class fish (Animal):
+    def init(self, name, obitanie, color, food):
+        super ().init (name)
+        self.obitanie = obitanie
+        self.color = color
+        self.food = food
 orel = Bird(Animal)("Орел", "коричневый", "лес", "1 метра", "птица")
 kuritsa = Bird(Animal)("Курица", "Белый", "Ферма", "5 метра", "зерно")
 krisa = Mlekopitayushee(Animal)("Крыса", "Серый", "Города", "Маленький", "Всеядна")
 obezyana = Mlekopitayushee(Animal)("Обезьяна", "Коричневый", "Джунгли", "Средний", "Фрукты")
 zmeya = Reptiliya(Animal)("Змея", "Пустыня", "Мелкая", "Длинная", "Мыши")
 hameleon = Reptiliya(Animal)("Хамелеон", "тропики", "Гладкая", "маленький", "рептилия")
+clown = fish (Animal) (' клоун', ' вода', 'рыжий', 'коралы' )
+belaya_shark = fish (Animal) ('белая акула ', 'серо-белый', 'рыбы,тюлени')
 print(orel.name, orel.color, orel.obitanie, orel.razmah, orel.food)
 print(kuritsa.name, kuritsa.color, kuritsa.obitanie, kuritsa.razmah, kuritsa.food)
 print(krisa.name, krisa.color, krisa.obitanie, krisa.razmer, krisa.food)
 print(obezyana.name, obezyana.color, obezyana.obitanie, obezyana.razmer, obezyana.food)
 print(zmeya.name, zmeya.obitanie, zmeya.cheshuya, zmeya.razmer, zmeya.food)
 print(hameleon.name, hameleon.obitanie, hameleon.cheshuya, hameleon.razmer, hameleon.food)
+print(clown.name, clown.color,clown.obitanie, clown.color, clown.food)
+print(belaya_shark.name, belaya_shark.color,belaya_shark.obitanie, belaya_shark.color, clown.food)
