@@ -1,4 +1,28 @@
+#номер 1 #
+
+class COMPS:
+    def init(self, owner, ram , cpu, hdd, gpu):
+        self.owner = owner
+        self.ram = ram
+        self.cpu = cpu
+        self.hdd = hdd
+        self.gpu = gpu
+
+def __gt__ (self, other ):
+   print (self.ram > other.ram)
+
+pc = COMPS ('behzod', 16, 'i9', 1024, 'rtx 5080')
+pc2 = COMPS ('Saif', 2, 'i9', 1024, "RTX 5080")
+
+print(pc.ram > pc2.ram)
+
+
+
+
+#номер 2 #
+
 class Animal:
+    pass
     def init(self, name):
         self.name = name
 class Bird(Animal):
@@ -22,7 +46,7 @@ class Reptiliya(Animal):
         self.cheshuya = cheshuya
         self.razmer = razmer
         self.food = food
-orel = Bird(Animal)("Орел", "коричневый","лес", "1 метра", "птица")
+orel = Bird(Animal)("Орел", "коричневый", "лес", "1 метра", "птица")
 kuritsa = Bird(Animal)("Курица", "Белый", "Ферма", "5 метра", "зерно")
 krisa = Mlekopitayushee(Animal)("Крыса", "Серый", "Города", "Маленький", "Всеядна")
 obezyana = Mlekopitayushee(Animal)("Обезьяна", "Коричневый", "Джунгли", "Средний", "Фрукты")
