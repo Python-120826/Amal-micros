@@ -76,3 +76,42 @@ print(zmeya.name, zmeya.obitanie, zmeya.cheshuya, zmeya.razmer, zmeya.food)
 print(hameleon.name, hameleon.obitanie, hameleon.cheshuya, hameleon.razmer, hameleon.food)
 print(clown.name, clown.color,clown.obitanie, clown.color, clown.food)
 print(belaya_shark.name, belaya_shark.color,belaya_shark.obitanie, belaya_shark.color, clown.food)
+
+
+#номер 3 #
+
+class figura:
+    def init(self, name):
+        self.name = name
+        super().init(name)
+class treugolnik(figura):
+         def init(self, name, a,b,c, P, S):
+             super().init(name)
+             self.name = name
+             self.a = a
+             self.b = b
+             self.c = c
+             self.P = P
+             self.S = S
+class chetirehgolnik(figura):
+    def init(self, name, a,c, P, S):
+        super().init(name)
+        self.name = name
+        self.a = a
+        self.c = c
+        self.P = P
+        self.S = S
+
+class circle(figura):
+    def init(self, name,R,P,S):
+        super().init(name)
+        self.name = name
+        self.R = R
+        self.P = P
+        self.S = S
+treugolnik = treugolnik(figura)( 'треугольник' 'a', 'b', 'c', 'P= a+b+c', 'S=(a+b+c):2')
+chetirehgolnik = chetirehgolnik(figura)('четырехугольник''a','c', "P = a+c)2", 'S = 1/2 d1 d2')
+circle = circle(figura) ('круг', 'R', 'P=c= 2pr', 'S= pr2')
+print(treugolnik.name,treugolnik.a,treugolnik.b,treugolnik.c,treugolnik.P,treugolnik.S)
+print(chetirehgolnik.name, chetirehgolnik.a,chetirehgolnik.c, chetirehgolnik.P,chetirehgolnik.S)
+print(circle.name,circle.R,circle.P,circle.S)
